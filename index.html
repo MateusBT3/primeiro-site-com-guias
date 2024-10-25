@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header>
+        
+        <img src="nike2.png" alt="" width="70px"> 
+        <h1 class="headerh">Mateus Toledo</h1>
+        
+        <nav>
+            <button class="btngeral"><a href="index.html"><img src="icone pessoa.webp" alt="" width="35px">Home</a></button>
+            <button class="btngeral"><a href="Sobre.html"><img src="livro.webp" alt="" width="35px">Sobre</a></button>
+            <button class="btngeral"><a href="contato.html"><img src="telefone.png" alt="" width="35px">Contato</a></button>
+        </nav>
+    </header>
+    
+    
+
+
+    <main class="mainindex">
+        <button class="btngeral" id="playSound"><img id="pato" src="pato.avif" alt="pato" width="250px"></button>
+        <script>
+            const sound = new Audio('quack.mp3');
+    
+            document.getElementById('playSound').addEventListener('click', () => {
+                sound.play().then(() => {
+                    console.log('Som está sendo reproduzido');
+                }).catch(e => {
+                    console.error('Erro ao tentar reproduzir o áudio:', e);
+                });
+            });
+        </script>
+
+        <div>
+            <div class="lado">
+            <h1><span class="cor">Este sou eu</span></h1>
+            <p><span class="cor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum beatae tempora cupiditate necessitatibus ea, ad, dolor tempore eligendi qui praesentium iure inventore sapiente consequatur vitae, deleniti incidunt nihil impedit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam iusto at ab fuga magnam amet totam, deserunt itaque, veniam, velit architecto excepturi cumque est praesentium explicabo accusantium minus sapiente atque?</span></p>
+            
+            <div class="link">
+            <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" >Google</a>
+            <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="dex">
+        <div class="credito">
+            <button class="rede"><a href="https://br.linkedin.com/in/mateus-toledo22" target="_blank"><img src="linkedin.png" alt="" width="40px"></a></button>
+            <button class="rede"><a href="https://www.youtube.com/" target="_blank"><img src="ytb.webp" alt="" width="40px"></a></button>
+        </div>
+    </footer>
+   
+</body>
+</html>
